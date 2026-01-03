@@ -5,5 +5,5 @@ echo "# Bearbox v.beta Instalador para o Bearbox Arquivos:
 
 Uso:
 
-    Extraia: unzip bearbox.zip
+    Extraia: unzip bearbox-main.zip
     Execute: chmod +x bbinstall.sh && ./bbinstall.sh" > README.md

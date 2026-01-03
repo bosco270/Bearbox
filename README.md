@@ -1,32 +1,28 @@
-# 🐻 Bearbox (v.beta)
+# Bearbox - Gerenciador de Tarefas em Terminal (TUI)
 
-**Bearbox** é um gerenciador de tarefas em **modo terminal (TUI)** escrito em **C**, utilizando a biblioteca **ncurses**.  
-O projeto tem foco em simplicidade, leveza e uso direto no console, sem dependências gráficas.
+## 📋 Sobre o Projeto
+**Bearbox** é um gerenciador de tarefas minimalista e eficiente desenvolvido em **C** com **ncurses**, projetado para operação direta no terminal. Com foco em simplicidade, leveza e produtividade, oferece uma interface intuitiva sem dependências gráficas desnecessárias.
 
-> Ideal para estudo de C, ncurses e aplicações em terminal.
+### 🎯 Características Principais
+- **🖥️ Interface TUI Intuitiva** - Navegação completa pelo teclado
+- **⚡ Leve e Rápido** - Consumo mínimo de recursos do sistema
+- **🔧 Sem Dependências Complexas** - Apenas ncurses e compilador C
+- **💾 Persistência de Dados** - Tarefas salvas automaticamente
 
----
+## 🚀 Instalação Rápida
 
-## 📦 Conteúdo do projeto
-
-- **bear.c**  
-  Código-fonte principal do Bearbox.
-
-- **bbinstall.sh**  
-  Script de instalação que compila e prepara o programa automaticamente.
-
-- **README.md**  
-  Documentação do projeto.
-
----
-
-## 🛠️ Pré-requisitos
-
-Antes de instalar, você precisa ter:
-
+### Pré-requisitos
+- Sistema Linux/Unix
 - GCC (compilador C)
-- Biblioteca **ncurses**
+- Biblioteca ncurses
 
-### Debian / Ubuntu
+### Instalação Automática (Recomendada)
 ```bash
-sudo apt install gcc libncurses5-dev
+# 1. Extraia o pacote
+unzip bearbox.zip
+
+# 2. Torne o instalador executável
+chmod +x bbinstall.sh
+
+# 3. Execute o instalador
+./bbinstall.sh

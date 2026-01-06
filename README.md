@@ -1,28 +1,54 @@
-# Bearbox - Gerenciador de Tarefas em Terminal (TUI)
+# 🐻 Bearbox — Gerenciador de Tarefas em Terminal (TUI)
 
-## 📋 Sobre o Projeto
-**Bearbox** é um gerenciador de tarefas minimalista e eficiente desenvolvido em **C** com **ncurses**, projetado para operação direta no terminal. Com foco em simplicidade, leveza e produtividade, oferece uma interface intuitiva sem dependências gráficas desnecessárias.
+![Bearbox Screenshot](./assets/bearbox.png)
 
-### 🎯 Características Principais
-- **🖥️ Interface TUI Intuitiva** - Navegação completa pelo teclado
-- **⚡ Leve e Rápido** - Consumo mínimo de recursos do sistema
-- **🔧 Sem Dependências Complexas** - Apenas ncurses e compilador C
-- **💾 Persistência de Dados** - Tarefas salvas automaticamente
+Gerenciador de tarefas minimalista em modo texto (TUI), desenvolvido em **C** com **ncurses**, focado em produtividade, leveza e uso direto pelo teclado.
 
-## 🚀 Instalação Rápida
+---
+
+## 📌 Descrição
+
+O **Bearbox** é um gerenciador de tarefas para terminal, feito para usuários que preferem fluxo de trabalho via CLI/TUI.  
+Sem dependências gráficas, rápido, simples e funcional.
+
+---
+
+## ✨ Funcionalidades
+
+- Interface TUI usando **ncurses**
+- Operação 100% via teclado
+- Organização de tarefas por status:
+  - Nova
+  - Em andamento
+  - Concluído
+- Persistência automática de dados
+- Sistema de IDs para controle rápido
+- Incrementos / subtarefas por tarefa
+- Baixo consumo de recursos
+
+---
+
+## 📷 Screenshot
+
+![Bearbox Interface](./assets/bearbox.png)
+
+---
+
+## 🛠️ Tecnologias
+
+- Linguagem: **C**
+- Biblioteca: **ncurses**
+- Plataforma: **Linux / Unix-like**
+
+---
+
+## 🚀 Instalação
 
 ### Pré-requisitos
-- Sistema Linux/Unix
-- GCC (compilador C)
-- Biblioteca ncurses
 
-### Instalação Automática (Recomendada)
+- GCC
+- ncurses
+
+Ubuntu / Debian:
 ```bash
-# 1. Extraia o pacote
-unzip bearbox.zip
-
-# 2. Torne o instalador executável
-chmod +x bbinstall.sh
-
-# 3. Execute o instalador
-./bbinstall.sh
+sudo apt install gcc libncurses-dev

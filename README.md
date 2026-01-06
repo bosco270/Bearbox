@@ -2,15 +2,6 @@
 
 > Um gerenciador de tarefas minimalista, rápido e totalmente operável pelo teclado, feito em **C** usando **ncurses**.
 
-```
-┌─ NOVA ──┬─ ANDAMENTO ─┬─ CONCLUIDO ─┐
-│ <001>   │ <003> [2]   │ <005>       │
-│ Task A  │ Task B      │ Task D      │
-└─────────┴─────────────┴─────────────┘
-```
-
----
-
 ## 📌 Sobre o Projeto
 
 **Bearbox** é um gerenciador de tarefas em modo texto (TUI), desenvolvido para quem vive no terminal e quer produtividade sem distrações.  
@@ -28,14 +19,14 @@ Ideal para:
 - 🖥️ **Interface TUI (ncurses)** totalmente navegável pelo teclado  
 - ⚡ **Leve e rápido**, consumo mínimo de recursos  
 - 🧠 **Organização Kanban** em três colunas:
-  - Nova Tarefa
-  - Em Andamento
+  - Nova
+  - Andamento
   - Concluído
-- 💾 **Persistência automática** em `~/.local/share/bearbox/`
+- 💾 **Persistência automática** 
 - 🔢 **Sistema de IDs** para gerenciamento rápido  
 - 📝 **Incrementos/Notas** para acompanhar evolução de tarefas
 - 🎨 **Interface colorida** com cores por categoria
-- 🪟 **Popups para input** estilo Vim
+- 🪟 **Popups para input** 
 
 ---
 
@@ -43,7 +34,7 @@ Ideal para:
 
 - **Linguagem:** C  
 - **Biblioteca:** ncurses  
-- **Plataforma:** Linux / Unix-like  
+- **Plataforma:** Linux  
 
 ---
 
@@ -54,11 +45,6 @@ Ideal para:
 - GCC
 - Biblioteca **ncurses**
 - Sistema Linux ou Unix-like
-
-**Ubuntu/Debian:**
-```bash
-sudo apt install gcc libncurses-dev
-```
 
 ### Instalação Rápida
 
@@ -86,8 +72,6 @@ bearbox
 | Comando | Descrição |
 |---------|-----------|
 | `nt` | Adicionar nova tarefa |
-| `ta` | Adicionar tarefa em andamento |
-| `tc` | Adicionar tarefa concluída |
 | `rm <id>` | Remover tarefa |
 | `mv <id>` | Mover tarefa para outra coluna |
 | `ed <id>` | Editar descrição da tarefa |
@@ -100,35 +84,6 @@ bearbox
 
 - `[N]` = Número de notas/incrementos na tarefa
 - Exemplo: `<001> [3] Minha tarefa` = tarefa com 3 incrementos
-
-### Exemplos de Uso
-
-```bash
-# Criar uma nova tarefa
->: nt
-[Popup] Descricao: Implementar feature X
-
-# Mover tarefa 1 para "Em Andamento"
->: mv 1
-[Popup] Escolha: 2
-
-# Adicionar nota à tarefa
->: in 1
-[Popup] Texto: Iniciado desenvolvimento
-
-# Ver histórico de notas
->: vi 1
-
-# Editar descrição
->: ed 1
-[Popup] Descricao: Implementar feature X (atualizado)
-
-# Remover tarefa
->: rm 1
-[Popup] Confirmar (s/N): s
-```
-
----
 
 ## 📂 Estrutura de Dados
 
